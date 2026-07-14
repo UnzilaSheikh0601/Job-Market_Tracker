@@ -36,10 +36,10 @@ try:
         "test"
     )
 
-    cursor.execute(insert_query, test_values)
-    connection.commit()
+    # cursor.execute(insert_query, test_values)
+    # connection.commit()
  
-    print("Test row inserted successfully!")
+    # print("Test row inserted successfully!")
 
     cursor.execute("SELECT job_title, company, skills_matched FROM jobs WHERE source = 'test';")
     result = cursor.fetchall()
